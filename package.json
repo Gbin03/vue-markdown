@@ -18,6 +18,9 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Vue component to render markdown",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "c8": "^10.0.0",
