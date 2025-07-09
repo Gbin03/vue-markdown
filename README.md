@@ -481,7 +481,7 @@ etc.
 
 Every component will receive a `node`.
 This is the original [`Element` from `hast`][github-hast-element] element being
-turned into a React element.
+turned into a Vue element.
 
 ## Security
 
@@ -498,7 +498,7 @@ It lets you define your own schema of what is and isn’t allowed.
 ## Related
 
 * [`react-markdown`][github-react-markdown]
-  — equivalent and referenced react markdown component
+  — equivalent react markdown component
 * [`MDX`][github-mdx]
   — JSX *in* markdown
 * [`remark-gfm`][github-remark-gfm]
@@ -530,22 +530,6 @@ It lets you define your own schema of what is and isn’t allowed.
 
 [author]: https://espen.codes/
 
-[badge-build-image]: https://github.com/remarkjs/react-markdown/workflows/main/badge.svg
-
-[badge-build-url]: https://github.com/remarkjs/react-markdown/actions
-
-[badge-coverage-image]: https://img.shields.io/codecov/c/github/remarkjs/react-markdown.svg
-
-[badge-coverage-url]: https://codecov.io/github/remarkjs/react-markdown
-
-[badge-downloads-image]: https://img.shields.io/npm/dm/react-markdown.svg
-
-[badge-downloads-url]: https://www.npmjs.com/package/react-markdown
-
-[badge-size-image]: https://img.shields.io/bundlejs/size/react-markdown
-
-[badge-size-url]: https://bundlejs.com/?q=react-markdown
-
 [commonmark-help]: https://commonmark.org/help/
 
 [commonmark-html]: https://spec.commonmark.org/0.31.2/#html-blocks
@@ -566,15 +550,9 @@ It lets you define your own schema of what is and isn’t allowed.
 
 [github-hast-nodes]: https://github.com/syntax-tree/hast#nodes
 
-[github-io-react-markdown]: https://remarkjs.github.io/react-markdown/
-
 [github-mdx]: https://github.com/mdx-js/mdx/
 
 [github-micromark]: https://github.com/micromark/micromark
-
-[github-react-remark]: https://github.com/remarkjs/react-remark
-
-[github-react-syntax-highlighter]: https://github.com/react-syntax-highlighter/react-syntax-highlighter
 
 [github-rehype]: https://github.com/rehypejs/rehype
 
@@ -583,8 +561,6 @@ It lets you define your own schema of what is and isn’t allowed.
 [github-rehype-plugins]: https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins
 
 [github-rehype-raw]: https://github.com/rehypejs/rehype-raw
-
-[github-rehype-react]: https://github.com/rehypejs/rehype-react
 
 [github-rehype-sanitize]: https://github.com/rehypejs/rehype-sanitize
 

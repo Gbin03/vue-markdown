@@ -32,6 +32,8 @@
     "remark-gfm": "^4.0.0",
     "remark-preset-wooorm": "^11.0.0",
     "remark-toc": "^9.0.0",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
     "type-coverage": "^2.0.0",
     "typescript": "^5.0.0",
     "@vue/server-renderer": "^3.5.13",
@@ -40,8 +42,6 @@
   },
   "exports": "./index.js",
   "files": [
-    "index.d.ts.map",
-    "index.d.ts",
     "index.js",
     "lib/"
   ],
@@ -79,11 +79,7 @@
   },
   "repository": "Gbin03/vue-markdown",
   "scripts": {
-    "build": "tsc --build --clean && tsc --build && type-coverage",
-    "format": "remark --frail --output --quiet -- . && prettier --log-level warn --write -- .",
-    "test-api": "node --conditions development --experimental-loader=./script/load-jsx.js --no-warnings test.jsx",
-    "test-coverage": "c8 --100 --exclude script/ --reporter lcov -- npm run test-api",
-    "test": "npm run build && npm run format && npm run test-coverage"
+    "test-api": "node --conditions development --experimental-loader=./script/load-jsx.js --no-warnings test.jsx"
   },
   "sideEffects": false,
   "typeCoverage": {

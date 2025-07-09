@@ -6,7 +6,7 @@ import {render, waitFor} from '@testing-library/vue'
 import {renderToString} from '@vue/server-renderer'
 import {mount} from '@vue/test-utils'
 
-import Markdown, {MarkdownHooks} from 'vue-markdown'
+import Markdown, {MarkdownHooks} from '@ghbsom/vue-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeStarryNight from 'rehype-starry-night'
 import remarkGfm from 'remark-gfm'
@@ -29,7 +29,7 @@ function getVNodeType(vnode) {
 
 test('vue-remark-markdown (core)', async function (t) {
   await t.test('should expose the public api', async function () {
-    assert.deepEqual(Object.keys(await import('react-markdown')).sort(), [
+    assert.deepEqual(Object.keys(await import('@ghbsom/vue-markdown')).sort(), [
       'MarkdownHooks',
       'default',
       'defaultUrlTransform'
@@ -266,7 +266,6 @@ test('Markdown', async function (t) {
               properties: {cx: 120, cy: 120, r: 100},
               children: []
             },
-            // `strokeMiterLimit` in hast, `strokeMiterlimit` in React.
             {
               type: 'element',
               tagName: 'path',
